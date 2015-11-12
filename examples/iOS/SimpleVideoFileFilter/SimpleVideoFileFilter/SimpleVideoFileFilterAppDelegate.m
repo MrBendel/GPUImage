@@ -19,8 +19,7 @@
     
     rootViewController = [[SimpleVideoFileFilterViewController alloc] initWithNibName:@"SimpleVideoFileFilterViewController" bundle:nil];
     rootViewController.view.frame = [[UIScreen mainScreen] bounds];
-    [self.window addSubview:rootViewController.view];
-
+    [self.window setRootViewController:rootViewController];
     [self.window makeKeyAndVisible];
     return YES;
 }
